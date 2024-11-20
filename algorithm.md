@@ -5,7 +5,7 @@
 
 
 High Level Tasks
-1. make a function to enter the filename and error check it
+1. error check user input file name
 2. read file to list 
 3. morse code conversion information
 3. read the morse code text 
