@@ -35,9 +35,8 @@ def morse_code_dictionary(list):
     dictionary = {}
     for line in list:
         item_list = line.split()
-        item_list = item_list.split()
         print(item_list)
-    morse_dictionary(item_list[2]) = item_list[1]
+        dictionary[item_list[2]] = item_list[1]
     return dictionary
 
 #Purpose: Converting morse code to english
