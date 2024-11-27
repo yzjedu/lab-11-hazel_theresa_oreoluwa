@@ -1,4 +1,4 @@
-# Programmers:
+# Programmers: Oreoluwa Adebusoye, Hazel, Theresa
 # Course:  CS151, Dr. Zelalem Jembre Yalew
 # Due Date:
 # Lab Assignment: 11
@@ -27,3 +27,38 @@ def read_file_to_list(file_name):
     with open(file_name, 'r') as input_file:
         list = input_file.readlines()
     return list
+
+# Purpose: Writes the decoded English text to a file
+# Parameter: list of decoded words
+# Return: None
+def write_list_to_file(user_list):
+    output_file = input("Enter the name of the output file: ")
+    with open(output_file, 'w') as file:
+        for line in list:
+            file.write(line + '\n')  # Write each line followed by a newline
+    print(f"Decoded content has been written to '{output_file}'.")
+
+# Purpose: Coordinates the program flow
+# Parameter: None
+# Return: None
+def main():
+    # Output a welcome message
+    print("Welcome to the Morse Code Decoder!")
+    # Get the input file name from the user
+    input_file = read_file_name()
+    #  Read the input file into a list
+    user_list = read_file_to_list(input_file)
+    # Read the Morse code file into a list
+    morse_code_file = read_file_name()
+    morse_code_list = read_file_to_list(morse_code_file)
+    # Morse Code Dictionary
+    morse_dict = morse_code_dictionary(morse_code_list)
+    # Convert the Morse code in user_list to English
+    english_list = converting_and_writing_to_english(morse_dict, user_list)
+    # Write the decoded English text to an output file
+    write_list_to_file(english_list)
+    print("Decoding complete! Thank you for using the Morse Code Decoder.")
+
+main()
+
+

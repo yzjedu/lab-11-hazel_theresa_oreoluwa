@@ -8,9 +8,9 @@ High Level Tasks
 1. error check user input file name
 2. read file to list 
 3. morse code conversion information
-3. read the morse code text 
-4. converting morse code to english and writing to new file 
-5. main 
+4. read the morse code text 
+5. converting morse code to english and writing to new file 
+6. main 
 
 
 Function 1 :
@@ -18,10 +18,10 @@ name: read_file_name
 parameters: none
 return: file name
 Algorithm:
-1. prompt user to enter a file name
-2. while file name does not exist:
-   3. prompt user to enter a file name
-4. return filename
+1. Prompt the user to enter a file name
+2. While the file name does not exist:
+   1. Prompt the user to enter a file name again
+3. return filename
 
 
 Function 2:
