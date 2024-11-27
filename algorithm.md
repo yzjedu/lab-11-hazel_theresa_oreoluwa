@@ -1,9 +1,5 @@
 # Algorithm Document
 
-#### THINK before you code...
-#### Write down the list of tasks to help you think
-
-
 High Level Tasks
 1. make a function to enter the filename and error check it
 2. read file to list 
@@ -48,7 +44,7 @@ Algorithm:
 
 
 Function 4 
-name:converting_and_writing_to_english
+name:converting_to_english
 parameters: dictionary and user_list
 return: none
 Algorithm: 
@@ -81,12 +77,13 @@ Algorithm:
 3. call read_file_to_list using user_file and store as user_list
 4. call read_file_to_list using morsecode.txt and store as morse_code_list
 5. call morse_code_dictionary using morse code list and store morse_code_dictionary
-6. call converting_and_writing_to_english and store as user_list
+6. call converting_to_english and store as user_list
 7. call write_user_list_to_file using user_list 
 8. output success and thanks message
 
 
 call main()
+
 
 
 
