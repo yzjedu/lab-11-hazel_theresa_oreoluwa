@@ -1,8 +1,8 @@
 # Programmers: Oreoluwa Adebusoye, Hazel, Theresa
 # Course:  CS151, Dr. Zelalem Jembre Yalew
-# Due Date:
+# Due Date: 11/28/24
 # Lab Assignment: 11
-# Problem Statement:
+# Problem Statement: Converting a program from morse code back to english
 # Data In:
 # Data Out:
 
@@ -27,6 +27,30 @@ def read_file_to_list(file_name):
     with open(file_name, 'r') as input_file:
         list = input_file.readlines()
     return list
+
+#Purpose: Create list into dictionary
+#Parameters: list
+#Return: dictionary
+def morse_code_dictionary(list):
+    dictionary = {}
+    for line in list:
+        item_list = line.split()
+        item_list = item_list.split()
+        print(item_list)
+    morse_dictionary(item_list[2]) = item_list[1]
+    return dictionary
+
+#Purpose: Converting morse code to english
+#Parameters: dictionary and user_list
+#Return: user_list
+def converting_to_english(dictionary,user_list):
+    for line in user_list:
+        split_line = line.split('')
+        print(split_line)
+    for item in user_list:
+        item = dictionary[item]
+    return user_list
+
 
 # Purpose: Writes the decoded English text to a file
 # Parameter: list of decoded words
