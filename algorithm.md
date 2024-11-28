@@ -26,8 +26,10 @@ parameters: filename
 return:list
 Algorithm: 
 1. create an empty list, and store as list
-2. open filename and store as input file
-3. read lines from input file to list
+2. open filename and store as input_file
+3. for each line in input_file:
+   4. strip line of white space
+   5. append line to list
 4. return list
 
 Function 3
@@ -35,11 +37,14 @@ name: morse_code_dictionary
 parameters: list
 return: dictionary
 Algorithm:
-1. set dictionary as an empty dictionary
-2. For line in list:
-   3. split the line, and store as itemlist
-   4. split itemlist 
-   5. morse_dictionary[itemlist[2]] equals itemlist[1]
+1. Prompt user to enter translation file
+2. set dictionary as an empty dictionary
+3. call read_file_name of user input
+4. Open file for reading and store as input_file
+2. For line in input_file:
+   3. split the line, and store as input_list
+   4. if the length of input_list is equal to 2
+      5. dictionary[itemlist[1]] equals itemlist[0]
 6. return dictionary
 
 
@@ -49,11 +54,16 @@ parameters: dictionary and user_list
 return: none
 Algorithm: 
 1. For line in user_list:
-   2. split line by space
-3. For item in user_list:
-   4. item equals dictionary[item]
-5. return user_list
-
+   2. split line by "   " and store as words 
+   3. for each word in words:
+      4. set an empty string as decoded word
+      5. for each item in word:
+         6. if item in dictionary
+         7. Set translated word to equal dictionary[item]
+      8. append translated word to a line
+   9. append line to list
+   10. return list.
+         
 
 Function 5
 name:write_user_list_to_file
