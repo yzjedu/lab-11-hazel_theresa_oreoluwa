@@ -3,8 +3,8 @@
 # Due Date: 11/28/24
 # Lab Assignment: 11
 # Problem Statement: Converting a program from morse code back to english
-# Data In:
-# Data Out:
+# Data In: Morse code translation file, input file
+# Data Out: Decoded output file
 
 
 import os
