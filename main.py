@@ -1,4 +1,4 @@
-# Programmers: Oreoluwa Adebusoye, Hazel Osborne , Theresa
+# Programmers: Oreoluwa Adebusoye, Hazel Osborne , Theresa DeJacimo
 # Course:  CS151, Dr. Zelalem Jembre Yalew
 # Due Date: 11/28/24
 # Lab Assignment: 11
@@ -12,10 +12,11 @@ import os
 #Purpose: error check user input file name
 #Parameter: none
 #Return: file_name
-def read_file_name(file_name):
+def read_file_name(prompt_message):
+    file_name = input(prompt_message)
     while not os.path.isfile(file_name):
         print("File does not Exist.")
-        file_name = input("Please enter a valid file name you would like to translate: ")
+        file_name = input(prompt_message)
     return file_name
 
 
@@ -34,15 +35,16 @@ def read_file_to_list(file_name):
 #Parameters: list
 #Return: dictionary
 def morse_code_dictionary():
+    print("\nProvide the Morse code translation file (e.g., morsecode.txt).")
+    morse_file = read_file_name("Enter the name of the Morse code translation file: ") # Validate file input
+    print("_" * 75)
+
     dictionary = {}
-    morse_file = input("Please enter the translation file: ")
-    morse_file = read_file_name(morse_file)
-    print("_" *75)
 
     with open(morse_file, 'r') as input_file:
         for line in input_file:
-            input_list = line.split()
-            if len(input_list) == 2:
+            input_list = line.strip().split()
+            if len(input_list) == 2: # Ensure the line is valid
                 dictionary[input_list[1]] = input_list[0]
     return dictionary
 
@@ -52,11 +54,11 @@ def morse_code_dictionary():
 def converting_to_english(dictionary,user_list):
     decoded_list = []
     for line in user_list:
-        words = line.split("   ")
+        words = line.split("   ")    # Words are separated by three spaces
         translated_line = []
         for word in words:
             translated_word = ""
-            for code in word.split():
+            for code in word.split():  # Letters are separated by one space
                 if code in dictionary:
                     translated_word += dictionary[code]
             translated_line.append(translated_word)
@@ -88,9 +90,8 @@ def main():
     print("_" *75)
     print("Welcome to the Morse Code Decoder!")
     # Get the input file name from the user
-    file_name = input("Please enter the file name you would like to translate: ")
     print("_" *75)
-    input_file = read_file_name(file_name)
+    input_file = read_file_name("Please enter a valid file name you would like to translate: ")
     #  Read the input file into a list
     user_list = read_file_to_list(input_file)
     # Check the Morse code file
