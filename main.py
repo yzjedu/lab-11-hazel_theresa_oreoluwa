@@ -9,7 +9,7 @@
 
 import os
 
-#Purpose: error check user input file name
+#Purpose: Error check user input file name
 #Parameter: none
 #Return: file_name
 def read_file_name(prompt_message):
