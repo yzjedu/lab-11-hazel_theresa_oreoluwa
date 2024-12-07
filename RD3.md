@@ -1,52 +1,51 @@
-ENCRYPTED:
-# Lyzfywncih Xiwogyhn
+# Reflection Document
 
-* Xlcpy Zoff Hugy  : Butyf Imvilhy
-* Julnhyl Zoff Hugy: Ilyifoqu, Nbylymu 
-* Mnoxyhn CX: 1930197
+* Drive Full Name  : Hazel Osborne
+* Partner Full Name: Oreoluwa, Theresa 
+* Student ID: 1930197
 
-**Qbun qyly sio mojjimyx ni fyulh/uwwigjfcmb?**
+**What were you supposed to learn/accomplish?**
 
-U jlialug nbun lyuxm gilmy wixy zlig u zcfy uhx nluhmfunym cn ni yhafcmb.
+A program that reads morse code from a file and translates it to english.
 
-**Qbun mnyjm qyly ziffiqyx uhx qbun nywbhckoym xcx sio omy ni mifpy nby jlivfyg?**
+**What steps were followed and what techniques did you use to solve the problem?**
 
-Zclmn qy lyux nby lyux gy zcfy uhx nufeyx uvion biq ni mifpy nby jlivfyg. Uznylqilxm, qy qileyx ih nby ufailcnbg, uhx nbyh nby wixy.
+First we read the read me file and talked about how to solve the problem. Afterwords, we worked on the algorithm, and then the code.
 
-**Qbun qyly nby Eys wihwyjnm yrjfilyx?**
-Qy xyyjyhyx iol ohxylmnuhxcha iz jucl jlialuggcha, xcwncihulcym, zcfym, uhx wlyuncha zohwncihm
+**What were the Key concepts explored?**
+We deepened our understanding of pair programming, dictionaries, files, and creating functions
 
-**Xcx siol lymofnm gunwb qbun sio yrjywnyx ni ayn?**
+**Did your results match what you expected to get?**
 
-Sym. 
+Yes. 
 
-**Xcx sio nls omcha pulciom nymn wumym, il yrnlygy nymn wumym?**
+**Did you try using various test cases, or extreme test cases?**
 
-Sym. Qy bupy yllil wbywecha zil omyl chjon, nbun mnijm nby wixy zlig wlumbcha qbyh yrnlygy wumym uly chjon.
+Yes. We have error checking for user input, that stops the code from crashing when extreme cases are input.
 
-**Qbun wbuffyhaym xcx sio yhwiohnyl?**
+**What challenges did you encounter?**
 
-Qy bux migy cmmoym qlcncha nby nluhmfunyx wixy ni uh ionjon zcfy
+We had some issues writing the translated code to an output file
 
-**Biq xcx sio ziffiq nby zclmn 3 lofym iz jlialuggcha?**
-1. Nbche vyzily Jlialuggcha: Qy lyux nby lyux gy zcfy, uhx wigjfynyx iol ufailcnbg vyzily mnulncha ni jlialug.
-2. Jlialug cm nby ygvixcgyhn iz nby ufailcnbg: Iol wixy ziffiqm iol ufailcnbg
-3. Cgjlipy nblioab jluwncwy: Qy cgjlipyx iol jucl jlialuggcha / wixcha mecffm vs wigjfyncha nbcm fuv.
+**How did you follow the first 3 rules of programming?**
+1. Think before Programming: We read the read me file, and completed our algorithm before starting to program.
+2. Program is the embodiment of the algorithm: Our code follows our algorithm
+3. Improve through practice: We improved our pair programming / coding skills by completing this lab.
 
 
-**Xcx sio ipylwigy nbyg, uhx biq?**
+**Did you overcome them, and how?**
 
-Sym, uznyl fiiecha vuwe ih iol hinym qy lyufctyx nbun qy qyly hin mjfcnncha uhx mnlcjjcha nby zohwncih jlijylfs
+Yes, after looking back on our notes we realized that we were not splitting and stripping the function properly
 
-**Uhs eys nueyuqusm?**
+**Any key takeaways?**
 
-Jfuhhcha vyzily jlialuggcha cm pyls cgjilnuhn.
+Planning before programming is very important.
 
-**Xi sio nbche sio fyulhyx qbun sio qyly mojjimyx ni fyulh zil nbcm fuv?**
+**Do you think you learned what you were supposed to learn for this lab?**
 
-Sym C xi. C zyyf gowb gily wigzilnuvfy qcnb zcfy qile uhx xcwncihulcym.
+Yes I do. I feel much more comfortable with file work and dictionaries.
 
-**Qbun qum cn fcey qilecha qcnb siol julnhyl?**
+**What was it like working with your partner?**
 
-Pyls aiix. Qy qyly uvfy ni wiggohcwuny yzzcwcyhnfs xymjcny bupcha 3 jyijfy/
+Very good. We were able to communicate efficiently despite having 3 people/
 
